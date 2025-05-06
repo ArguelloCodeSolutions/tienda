@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - TiendaDelConucoS.A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        #header {
+            width: 100%;
+            height: 110px;
+            background-color: rgba(34, 139, 34, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #header img {
+            height: 90px;
+            margin-left: 20px;
+        }
+
+        #header h1 {
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #main-content {
+            display: flex;
+            flex: 1;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #login-container {
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(34, 139, 34, 0.5);
+        }
+
+        #login-container h1 {
+            color: rgba(34, 139, 34, 1);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: rgba(34, 139, 34, 0.7);
+            box-shadow: 0 0 5px rgba(34, 139, 34, 0.5);
+        }
+
+        #submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(34, 139, 34, 1);
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-btn:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(34, 139, 34, 0.7);
+        }
+
+        .support-contact {
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="imagenes/logo2.png" alt="" />
+        <h1>TiendaDelConucoS.A</h1>
+    </div>
+
+    <div id="main-content">
+        <div id="login-container">
+            <h1>Inicio de Sesión</h1>
+            <form action="formulario" method="post">
+                <div class="form-group">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="clave">Clave:</label>
+                    <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
+                </div>
+                
+                <button type="submit" id="submit-btn">Ingresar</button>
+                
+                <div class="support-contact">
+                    Para soporte técnico, contacte a: <br>
+                    <strong>ArgüelloCodeSolution@gmail.com</strong>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
